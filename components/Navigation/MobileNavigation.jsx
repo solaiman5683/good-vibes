@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import SwitchThemeButton from '../SwitchThemeButton/SwitchThemeButton';
+import Link from 'next/link';
 
 const MobileNavigation = () => {
 	const { systemTheme, theme, setTheme } = useTheme();
@@ -22,16 +23,20 @@ const MobileNavigation = () => {
 					height={36}
 				/>
 
-				<Image
-					src={
-						currentTheme === 'dark'
-							? '/images/logo-dark.svg'
-							: '/images/logo.svg'
-					}
-					alt='logo'
-					width={99.27}
-					height={100}
-				/>
+				<Link href='/'>
+					<a>
+						<Image
+							src={
+								currentTheme === 'dark'
+									? '/images/logo-dark.svg'
+									: '/images/logo.svg'
+							}
+							alt='logo'
+							width={99.27}
+							height={100}
+						/>
+					</a>
+				</Link>
 
 				<SwitchThemeButton />
 			</div>
