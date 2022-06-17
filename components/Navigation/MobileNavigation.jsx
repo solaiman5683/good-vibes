@@ -1,0 +1,45 @@
+import React from 'react';
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
+import ActiveLink from '../ActiveLink/ActiveLink';
+import SwitchThemeButton from '../SwitchThemeButton/SwitchThemeButton';
+
+const MobileNavigation = () => {
+	const { systemTheme, theme, setTheme } = useTheme();
+	const currentTheme = theme === 'system' ? systemTheme : theme;
+
+	return (
+		<>
+			<div className='flex justify-between items-center shadow px-4'>
+				<Image
+					src={
+						currentTheme === 'dark'
+							? '/images/hamburger-dark.svg'
+							: '/images/hamburger.svg'
+					}
+					alt='logo'
+					width={31}
+					height={36}
+				/>
+
+				<Image
+					src={
+						currentTheme === 'dark'
+							? '/images/logo-dark.svg'
+							: '/images/logo.svg'
+					}
+					alt='logo'
+					width={99.27}
+					height={100}
+				/>
+
+				<SwitchThemeButton />
+			</div>
+			<button className='bg-orange-500 ml-auto mr-4 block mt-2 px-6 py-2 rounded text-white'>
+				Book a table
+			</button>
+		</>
+	);
+};
+
+export default MobileNavigation;

@@ -20,7 +20,6 @@ const Navigation = () => {
 						alt='logo'
 						width={134}
 						height={89}
-						className='h-8 w-8'
 					/>
 					<div className='mx-auto'>
 						<ul className='flex justify-center gap-4'>
