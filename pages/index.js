@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import SwitchThemeButton from '../components/SwitchThemeButton/SwitchThemeButton';
 
 export default function Home() {
-  return (
-    <div>
-      <h2 className="text-4xl text-center p-4 font-bold text-gray-700">
-        Welcome to my new restaurant site with Tailwind CSS and Next.js 🎉
-      </h2>
-    </div>
-  )
+	return (
+		<div>
+			<SwitchThemeButton />
+			<h2 className='text-4xl text-center p-4 font-bold text-gray-700 dark:text-gray-50'>
+				Welcome to my new restaurant site with Tailwind CSS and Next.js 🎉
+			</h2>
+		</div>
+	);
 }
