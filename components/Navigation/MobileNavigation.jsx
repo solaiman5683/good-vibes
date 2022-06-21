@@ -1,14 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-// import { useTheme } from 'next-themes';
+import { useTheme } from 'next-themes';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import SwitchThemeButton from '../SwitchThemeButton/SwitchThemeButton';
 import Link from 'next/link';
 
 const MobileNavigation = () => {
-	// const { systemTheme, theme, setTheme } = useTheme();
-	// const currentTheme = theme === 'system' ? systemTheme : theme;
-	const currentTheme = 'dark';	
+	const { systemTheme, theme, setTheme } = useTheme();
+	const currentTheme = theme === 'system' ? systemTheme : theme;
 	const [mounted, setMounted] = React.useState(false);
 	React.useEffect(() => {
 		setMounted(true);
