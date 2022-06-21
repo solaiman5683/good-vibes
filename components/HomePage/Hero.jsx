@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import { useTheme } from 'next-themes';
+// import { useTheme } from 'next-themes';
 import React from 'react';
 
 const Hero = () => {
-	const { systemTheme, theme } = useTheme();
-	const currentTheme = theme === 'system' ? systemTheme : theme;
+	// const { systemTheme, theme } = useTheme();
+	// const currentTheme = theme === 'system' ? systemTheme : theme;
+	const currentTheme = 'dark';	
 	const [mounted, setMounted] = React.useState(false);
 	React.useEffect(() => {
 		setMounted(true);

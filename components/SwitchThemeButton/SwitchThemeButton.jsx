@@ -1,10 +1,11 @@
 import React from 'react';
-import { useTheme } from 'next-themes';
+// import { useTheme } from 'next-themes';
 import { SunIcon, MoonIcon } from '@heroicons/react/solid';
 
 const SwitchThemeButton = () => {
-	const { systemTheme, theme, setTheme } = useTheme();
-	const currentTheme = theme === 'system' ? systemTheme : theme;
+	// const { systemTheme, theme, setTheme } = useTheme();
+	// const currentTheme = theme === 'system' ? systemTheme : theme;
+	let currentTheme = 'dark';
 	const [mounted, setMounted] = React.useState(false);
 	React.useEffect(() => {
 		setMounted(true);
@@ -17,7 +18,7 @@ const SwitchThemeButton = () => {
 			<SunIcon
 				className='h-8 w-8'
 				role='button'
-				onClick={() => setTheme('light')}
+				onClick={() => currentTheme = 'light'}
 			/>
 		);
 	} else {
@@ -25,7 +26,7 @@ const SwitchThemeButton = () => {
 			<MoonIcon
 				className='h-8 w-8'
 				role='button'
-				onClick={() => setTheme('dark')}
+				onClick={() => currentTheme = 'dark'}
 			/>
 		);
 	}
