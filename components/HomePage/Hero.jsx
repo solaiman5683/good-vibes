@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useTheme } from 'npm i @heroicons/react';
+import { useTheme } from 'next-themes';
 import React from 'react';
 
 const Hero = () => {
