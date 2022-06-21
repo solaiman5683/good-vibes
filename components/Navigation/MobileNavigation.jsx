@@ -8,7 +8,12 @@ import Link from 'next/link';
 const MobileNavigation = () => {
 	const { systemTheme, theme, setTheme } = useTheme();
 	const currentTheme = theme === 'system' ? systemTheme : theme;
+	const [mounted, setMounted] = React.useState(false);
+	React.useEffect(() => {
+		setMounted(true);
+	}, []);
 
+	if (!mounted) return null;
 	return (
 		<>
 			<div className='flex justify-between items-center shadow px-4'>

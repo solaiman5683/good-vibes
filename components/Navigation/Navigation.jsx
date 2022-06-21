@@ -1,13 +1,19 @@
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import SwitchThemeButton from '../SwitchThemeButton/SwitchThemeButton';
 
 const Navigation = () => {
 	const { systemTheme, theme } = useTheme();
 	const currentTheme = theme === 'system' ? systemTheme : theme;
+	const [mounted, setMounted] = React.useState(false);
+	React.useEffect(() => {
+		setMounted(true);
+	}, []);
 
+	if (!mounted) return null;
 	return (
 		<div className='bg-white dark:bg-black shadow'>
 			<div className='container'>

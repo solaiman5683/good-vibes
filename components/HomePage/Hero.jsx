@@ -1,8 +1,16 @@
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import React from 'react';
 
 const Hero = () => {
-    const { theme } = useTheme();
+	const { systemTheme, theme } = useTheme();
+	const currentTheme = theme === 'system' ? systemTheme : theme;
+	const [mounted, setMounted] = React.useState(false);
+	React.useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	if (!mounted) return null;
 	return (
 		<div className='dark:bg-[url("/images/hero-bg-dark.png")] bg-[url("/images/hero-bg.png")]  bg-right bg-cover bg-no-repeat h-[870px]'>
 			<div className='container h-full flex items-center relative'>
@@ -27,12 +35,12 @@ const Hero = () => {
 					</div>
 					<div
 						className={`flex flex-col justify-center items-end gap-6 absolute ${
-							theme === 'dark' ? 'bottom-32 right-8' : 'top-4 right-8'
+							currentTheme === 'dark' ? 'bottom-32 right-8' : 'top-4 right-8'
 						}`}>
 						<a href='#'>
 							<Image
 								src={
-									theme === 'dark'
+									currentTheme === 'dark'
 										? '/images/instagram-dark.png'
 										: '/images/instagram.png'
 								}
@@ -44,7 +52,7 @@ const Hero = () => {
 						<a href='#'>
 							<Image
 								src={
-									theme === 'dark'
+									currentTheme === 'dark'
 										? '/images/twitter-dark.png'
 										: '/images/twitter.png'
 								}
@@ -56,7 +64,7 @@ const Hero = () => {
 						<a href='#'>
 							<Image
 								src={
-									theme === 'dark'
+									currentTheme === 'dark'
 										? '/images/facebook-dark.png'
 										: '/images/facebook.png'
 								}

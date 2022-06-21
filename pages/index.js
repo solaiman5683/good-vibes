@@ -1,3 +1,4 @@
+import About from '../components/About/About';
 import Hero from '../components/HomePage/Hero';
 import MobileNavigation from '../components/Navigation/MobileNavigation';
 import Navigation from '../components/Navigation/Navigation';
@@ -13,6 +14,7 @@ export default function Home() {
 				<MobileNavigation />
 			</div>
 			<Hero />
+			<About />
 		</>
 	);
 }

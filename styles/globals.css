@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 
 html,
 body {
@@ -19,6 +20,10 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+.font-dancing {
+	font-family: 'Dancing Script', cursive !important;
 }
 
 .container {
