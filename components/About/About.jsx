@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const About = () => {
 	return (
-		<div className='bg-[url("/images/about-bg.png")] bg-center bg-cover p-4'>
+		<div className='dark:bg-[url("/images/about-bg-dark.png")] bg-[url("/images/about-bg.png")] bg-center bg-cover p-4'>
 			<div className='container dark:bg-black bg-white h-full rounded-2xl shadow-xl p-6 '>
 				<h2 className='text-5xl text-center p-4'>
 					<span className='font-dancing text-orange-300 text-5xl -ml-16 opacity-90'>

@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import React from 'react';
 
 const Hero = () => {
@@ -74,8 +74,7 @@ const Hero = () => {
 							/>
 						</a>
 					</div>
-					<div
-						className={`flex md:hidden items-end gap-6 justify-center`}>
+					<div className={`flex md:hidden items-end gap-6 justify-center`}>
 						<a href='#'>
 							<Image
 								src={
