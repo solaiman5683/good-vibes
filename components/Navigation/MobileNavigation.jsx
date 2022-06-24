@@ -45,9 +45,9 @@ const MobileNavigation = () => {
 
 				<SwitchThemeButton />
 			</div>
-			<button className='bg-orange-500 ml-auto mr-4 block mt-2 px-6 py-2 rounded text-white'>
+			{/* <button className='bg-orange-500 ml-auto mr-4 block mt-2 px-6 py-2 rounded text-white'>
 				Book a table
-			</button>
+			</button> */}
 		</>
 	);
 };

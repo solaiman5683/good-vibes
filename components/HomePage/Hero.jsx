@@ -12,11 +12,11 @@ const Hero = () => {
 
 	if (!mounted) return null;
 	return (
-		<div className='dark:bg-[url("/images/hero-bg-dark.png")] bg-[url("/images/hero-bg.png")]  bg-right bg-cover bg-no-repeat h-[870px]'>
+		<div className='dark:bg-[url("/images/hero-bg-dark.png")] bg-[url("/images/hero-bg.png")] bg-left md:bg-right bg-cover bg-no-repeat md:h-[870px] py-16'>
 			<div className='container h-full flex items-center relative'>
-				<div className='w-full '>
-					<p className='text-6xl font-thin'>GOOD FOOD & </p>
-					<h2 className='text-7xl mt-4 mb-6'>GREAT VIBES.</h2>
+				<div className='w-full text-center md:text-left'>
+					<p className='text-3xl md:text-6xl font-thin'>GOOD FOOD & </p>
+					<h2 className='text-5xl md:text-7xl mt-4 mb-6'>GREAT VIBES.</h2>
 					<p className='max-w-[626px] text-gray-500 dark:text-gray-400'>
 						Amet adipiscing vel nunc blandit. Nisi, tortor, vel, mauris dictum
 						sit donec feugiat ac. Tellus mattis dui consequat, vulputate lectus
@@ -25,7 +25,7 @@ const Hero = () => {
 						molestie pretium. Dolor, pellentesque nunc ac augue egestas.
 						Pellentesque cras fringilla enim
 					</p>
-					<div className='flex my-6 gap-6'>
+					<div className='flex justify-center md:justify-start my-6 gap-6'>
 						<button className='uppercase bg-orange-500 text-white px-6 py-3 rounded'>
 							Discover More
 						</button>
@@ -34,9 +34,48 @@ const Hero = () => {
 						</button>
 					</div>
 					<div
-						className={`flex flex-col justify-center items-end gap-6 absolute ${
+						className={`hidden md:flex flex-col justify-center items-end gap-6 absolute ${
 							currentTheme === 'dark' ? 'bottom-32 right-8' : 'top-4 right-8'
 						}`}>
+						<a href='#'>
+							<Image
+								src={
+									currentTheme === 'dark'
+										? '/images/instagram-dark.png'
+										: '/images/instagram.png'
+								}
+								alt='Instagram'
+								width={28}
+								height={28}
+							/>
+						</a>
+						<a href='#'>
+							<Image
+								src={
+									currentTheme === 'dark'
+										? '/images/twitter-dark.png'
+										: '/images/twitter.png'
+								}
+								alt='Instagram'
+								width={28}
+								height={28}
+							/>
+						</a>
+						<a href='#'>
+							<Image
+								src={
+									currentTheme === 'dark'
+										? '/images/facebook-dark.png'
+										: '/images/facebook.png'
+								}
+								alt='Instagram'
+								width={28}
+								height={28}
+							/>
+						</a>
+					</div>
+					<div
+						className={`flex md:hidden items-end gap-6 justify-center`}>
 						<a href='#'>
 							<Image
 								src={
