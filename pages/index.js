@@ -2,7 +2,7 @@ import About from '../components/About/About';
 import Hero from '../components/HomePage/Hero';
 import MobileNavigation from '../components/Navigation/MobileNavigation';
 import Navigation from '../components/Navigation/Navigation';
-import SwitchThemeButton from '../components/SwitchThemeButton/SwitchThemeButton';
+import VideoSection from '../components/VideoSection/VideoSection';
 
 export default function Home() {
 	return (
@@ -15,6 +15,7 @@ export default function Home() {
 			</div>
 			<Hero />
 			<About />
+			<VideoSection />
 		</>
 	);
 }
