@@ -27,3 +27,16 @@ a {
 .container {
 	@apply mx-auto p-2;
 }
+
+
+.slick-slide:hover {
+	position: relative;
+	transition: all 0.5s ease;
+	transform: scale(1.07) !important;
+	z-index: 9999 !important;
+}
+
+.slick-arrow{
+	display: none !important;
+}
+

@@ -34,7 +34,7 @@ const Hero = () => {
 						</button>
 					</div>
 					<div
-						className={`hidden md:flex flex-col justify-center items-end gap-6 absolute ${
+						className={`hidden dark:md:flex flex-col justify-center items-end gap-6 absolute ${
 							currentTheme === 'dark' ? 'bottom-32 right-8' : 'top-4 right-8'
 						}`}>
 						<a href='#'>
@@ -74,7 +74,7 @@ const Hero = () => {
 							/>
 						</a>
 					</div>
-					<div className={`flex md:hidden items-end gap-6 justify-center`}>
+					<div className={`flex dark:md:hidden items-end gap-6 md:justify-start justify-center`}>
 						<a href='#'>
 							<Image
 								src={
