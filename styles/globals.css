@@ -28,7 +28,6 @@ a {
 	@apply mx-auto p-2;
 }
 
-
 .slick-slide:hover {
 	position: relative;
 	transition: all 0.5s ease;
@@ -36,7 +35,17 @@ a {
 	z-index: 9999 !important;
 }
 
-.slick-arrow{
+.slick-arrow {
 	display: none !important;
 }
 
+.slick-dots {
+	@apply dark:bg-black;
+}
+.slick-dots li button::before {
+	@apply dark:text-white;
+}
+
+.slick-dots li.slick-active button::before {
+	@apply dark:text-white;
+}

@@ -8,6 +8,7 @@ const HomeSlider = () => {
 		centerMode: true,
 		infinite: true,
 		arrow: false,
+		dots: true,
 		centerPadding: '50px',
 		slidesToShow: 3,
 		speed: 500,
