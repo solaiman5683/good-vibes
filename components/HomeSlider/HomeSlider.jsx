@@ -15,7 +15,7 @@ const HomeSlider = () => {
 	};
 	return (
 		<>
-			<div className='container dark:bg-black bg-white h-full rounded-2xl shadow-xl p-6 '>
+			<div className='container dark:bg-black bg-white h-full rounded-2xl shadow-xl p-8'>
 				<div className='text-5xl text-center p-4'>
 					<span className='font-dancing text-orange-300 text-5xl -ml-16 opacity-90'>
 						Enjoy our Meals
@@ -28,40 +28,42 @@ const HomeSlider = () => {
 				</div>
 			</div>
 
-			<Slider {...settings} className='py-4'>
-				<div className='p-4'>
-					<Image
-						src='/images/slider-img1.png'
-						alt='Menu'
-						width={868}
-						height={546}
-					/>
-				</div>
-				<div className='p-4'>
-					<Image
-						src='/images/slider-img1.png'
-						alt='Menu'
-						width={868}
-						height={546}
-					/>
-				</div>
-				<div className='p-4'>
-					<Image
-						src='/images/slider-img1.png'
-						alt='Menu'
-						width={868}
-						height={546}
-					/>
-				</div>
-				<div className='p-4'>
-					<Image
-						src='/images/slider-img1.png'
-						alt='Menu'
-						width={868}
-						height={546}
-					/>
-				</div>
-			</Slider>
+			<div className='pb-20'>
+				<Slider {...settings}>
+					<div className='p-4'>
+						<Image
+							src='/images/slider-img1.png'
+							alt='Menu'
+							width={868}
+							height={546}
+						/>
+					</div>
+					<div className='p-4'>
+						<Image
+							src='/images/slider-img1.png'
+							alt='Menu'
+							width={868}
+							height={546}
+						/>
+					</div>
+					<div className='p-4'>
+						<Image
+							src='/images/slider-img1.png'
+							alt='Menu'
+							width={868}
+							height={546}
+						/>
+					</div>
+					<div className='p-4'>
+						<Image
+							src='/images/slider-img1.png'
+							alt='Menu'
+							width={868}
+							height={546}
+						/>
+					</div>
+				</Slider>
+			</div>
 		</>
 	);
 };

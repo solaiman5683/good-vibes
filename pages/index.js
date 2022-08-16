@@ -1,8 +1,11 @@
-
-import Head  from 'next/head';
+import Head from 'next/head';
 import About from '../components/About/About';
 import Hero from '../components/HomePage/Hero';
 import HomeSlider from '../components/HomeSlider/HomeSlider';
+import Breakfast from '../components/Menues/Breakfast';
+import Drinks from '../components/Menues/Drinks';
+import Snacks from '../components/Menues/Snacks';
+import Starters from '../components/Menues/Starters';
 import MobileNavigation from '../components/Navigation/MobileNavigation';
 import Navigation from '../components/Navigation/Navigation';
 import VideoSection from '../components/VideoSection/VideoSection';
@@ -23,6 +26,10 @@ export default function Home() {
 			<About />
 			<VideoSection />
 			<HomeSlider />
+			<Starters />
+			<Breakfast />
+			<Snacks />
+			<Drinks />
 		</>
 	);
 }
