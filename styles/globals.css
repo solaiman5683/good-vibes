@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 html,
 body {
@@ -25,17 +23,23 @@ a {
 .font-dancing {
 	font-family: 'Dancing Script', cursive !important;
 }
+.font-rock {
+	font-family: 'Rock Salt', cursive !important;
+}
+.font-pacific {
+	font-family: 'Pacifico', cursive !important;
+}
 
 .container {
 	@apply mx-auto p-2;
 }
 
-.slick-slide:hover {
+/* .slick-slide:hover {
 	position: relative;
 	transition: all 0.5s ease;
 	transform: scale(1.07) !important;
 	z-index: 9999 !important;
-}
+} */
 
 .slick-arrow {
 	display: none !important;

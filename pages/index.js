@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import About from '../components/About/About';
+import BookTable from '../components/HomePage/BookTable';
 import Hero from '../components/HomePage/Hero';
 import HomeSlider from '../components/HomeSlider/HomeSlider';
 import Breakfast from '../components/Menues/Breakfast';
@@ -30,6 +31,7 @@ export default function Home() {
 			<Breakfast />
 			<Snacks />
 			<Drinks />
+			<BookTable />
 		</>
 	);
 }

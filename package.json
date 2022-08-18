@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "animated-number-react": "^0.1.2",
     "next": "12.1.6",
     "next-themes": "^0.2.0",
     "react": "18.2.0",

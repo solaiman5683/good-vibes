@@ -6,19 +6,19 @@ import MenuItem from './MenuItem';
 const Starters = () => {
 	return (
 		<div className='bg-[url("/images/starters-bg.png")] dark:bg-[url("/images/starters-bg-dark.png")] bg-no-repeat bg-cover bg-center py-12'>
-			<div className='flex items-end'>
+			<div className='flex items-center flex-col flex-wrap xl:flex-row xl:flex-nowrap gap-6'>
 				<Image
 					src='/images/starters.png'
 					alt='Starters'
 					width={675}
 					height={1023}
 				/>
-				<div className='ml-32 mr-8 w-4/6'>
-					<h2 className='font-bold text-4xl uppercase'>
+				<div className='xl:ml-32 mr-8 w-full xl:w-4/6 px-8'>
+					<h2 className='font-bold text-2xl lg:text-4xl uppercase'>
 						<span className='font-dancing text-orange-300'>1. </span>
 						Starters
 					</h2>
-					<div className='-ml-8'>
+					<div className='lg:-ml-8'>
 						<Image
 							src='/images/double-line.svg'
 							alt='Double Line'

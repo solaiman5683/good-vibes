@@ -6,13 +6,13 @@ import MenuItem from './MenuItem';
 const Breakfast = () => {
 	return (
 		<div className='bg-[url("/images/breakfast-bg.png")] dark:bg-[url("/images/breakfast-bg-dark.png")] bg-no-repeat bg-cover bg-center py-12'>
-			<div className='flex items-end'>
-				<div className='mr-28 ml-12 w-4/6'>
-					<h2 className='font-bold text-4xl uppercase'>
+			<div className='flex items-center flex-col xl:flex-row flex-col-reverse flex-wrap xl:flex-nowrap gap-6'>
+				<div className='xl:mr-28 xl:ml-12 w-full xl:w-4/6 p-6'>
+					<h2 className='font-bold text-2xl md:text-4xl uppercase'>
 						<span className='font-dancing text-orange-300'>2. </span>
 						Breakfast
 					</h2>
-					<div className='-ml-6'>
+					<div className='lg:-ml-6'>
 						<Image
 							src='/images/double-line.svg'
 							alt='Double Line'

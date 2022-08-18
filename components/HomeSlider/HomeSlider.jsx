@@ -12,10 +12,20 @@ const HomeSlider = () => {
 		centerPadding: '50px',
 		slidesToShow: 3,
 		speed: 500,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerPadding: '0px',
+				},
+			},
+		],
 	};
 	return (
 		<>
-			<div className='container dark:bg-black bg-white h-full rounded-2xl shadow-xl p-8'>
+			<div className='container dark:bg-black bg-white h-full rounded-2xl p-8'>
 				<div className='text-5xl text-center p-4'>
 					<span className='font-dancing text-orange-300 text-5xl -ml-16 opacity-90'>
 						Enjoy our Meals
