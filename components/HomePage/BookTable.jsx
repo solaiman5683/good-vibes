@@ -57,7 +57,7 @@ const BookTable = () => {
 				<BookCount text='Dishes on Menu' number={50} />
 				<BookCount text='Bookings a Day' number={110} />
 			</div>
-			<div className='bg-[url("/images/book-table-form.png")] dark:bg-[url("/images/book-table-form-dark.png")] bg-no-repeat bg-cover bg-center lg:p-20'>
+			<div className='bg-[url("/images/book-table-form.png")] dark:bg-[url("/images/book-table-form-dark.png")] bg-no-repeat bg-cover bg-center lg:p-20 p-8'>
 				<div className='container flex flex-col lg:flex-row items-center justify-center gap-8'>
 					<div className='w-full lg:w-1/2 flex flex-col justify-center items-center gap-12 '>
 						<Image
@@ -74,7 +74,7 @@ const BookTable = () => {
 				</div>
 			</div>
 
-			<div className='grid grid-cols-3 font-dancing'>
+			<div className='grid grid-cols-1 md:grid-cols-3 font-dancing'>
 				<div className='bg-[url("/images/romantic-dinner.png")] dark:bg-[url("/images/romantic-dinner-dark.png")] bg-no-repeat bg-cover bg-center flex justify-center items-center flex-col p-12'>
 					<div className='text-center'>
 						<h3 className='text-4xl mb-8'>Have a Romantic Dinner?</h3>

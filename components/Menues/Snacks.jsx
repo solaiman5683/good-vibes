@@ -5,14 +5,16 @@ import MenuItem from './MenuItem';
 
 const Snacks = () => {
 	return (
-		<div className='bg-[url("/images/snacks-bg.png")] dark:bg-[url("/images/snacks-bg-dark.png")] bg-no-repeat bg-cover bg-center py-12'>
+		<div className='bg-[url("/images/snacks-bg.png")] dark:bg-[url("/images/snacks-bg-dark.png")] bg-no-repeat bg-cover bg-center py-12 overflow-hidden'>
 			<div className='flex items-center flex-col xl:flex-row gap-6'>
-				<Image
-					src='/images/snacks.png'
-					alt='Starters'
-					width={675}
-					height={1023}
-				/>
+				<div className='w-full xl:w-2/6 '>
+					<Image
+						src='/images/snacks.png'
+						alt='Starters'
+						width={675}
+						height={1023}
+					/>
+				</div>
 				<div className='xl:ml-32 xl:mr-8 w-full xl:w-4/6 p-6'>
 					<h2 className='font-bold text-2xl md:text-4xl uppercase'>
 						<span className='font-dancing text-orange-300'>3. </span>

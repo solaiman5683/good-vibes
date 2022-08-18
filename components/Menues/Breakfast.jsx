@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 
 const Breakfast = () => {
 	return (
-		<div className='bg-[url("/images/breakfast-bg.png")] dark:bg-[url("/images/breakfast-bg-dark.png")] bg-no-repeat bg-cover bg-center py-12'>
+		<div className='bg-[url("/images/breakfast-bg.png")] dark:bg-[url("/images/breakfast-bg-dark.png")] bg-no-repeat bg-cover bg-center py-12 overflow-hidden'>
 			<div className='flex items-center flex-col xl:flex-row flex-col-reverse flex-wrap xl:flex-nowrap gap-6'>
 				<div className='xl:mr-28 xl:ml-12 w-full xl:w-4/6 p-6'>
 					<h2 className='font-bold text-2xl md:text-4xl uppercase'>
@@ -38,13 +38,14 @@ const Breakfast = () => {
 						</div>
 					</div>
 				</div>
-
-				<Image
-					src='/images/breakfast.png'
-					alt='Starters'
-					width={675}
-					height={1023}
-				/>
+				<div className='w-full xl:w-2/6'>
+					<Image
+						src='/images/breakfast.png'
+						alt='Starters'
+						width={675}
+						height={1023}
+					/>
+				</div>
 			</div>
 		</div>
 	);
