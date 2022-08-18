@@ -7,7 +7,7 @@ const BookCount = ({ number, text }) => {
 		setCount(number);
 	}, [number]);
 	return (
-		<div className='p-6 text-center'>
+		<div className='p-8 text-center'>
 			<h3 className='text-5xl'>
 				<AnimatedNumber value={count} formatValue={n => n.toFixed(0)} />+
 			</h3>
