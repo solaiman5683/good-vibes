@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import BookCount from './BookCount';
+import DivWithBG from './DivWithBG';
 
 const BookTable = () => {
 	return (
@@ -17,38 +18,36 @@ const BookTable = () => {
 					</div>
 				</div>
 			</div>
-			<div className='bg-[url("/images/book-table.png")] bg-no-repeat bg-cover bg-center'>
-				<div className='bg-white dark:bg-black bg-opacity-75 dark:bg-opacity-75 p-16'>
-					<div className='flex flex-col items-center justify-center gap-8'>
-						<Image
-							src='/images/quote.svg'
-							alt='Book a table'
-							width={62}
-							height={45}
-						/>
-						<p className='font-dancing text-3xl w-2/4 text-center'>
-							“Amet adipiscing vel nunc blandit. Nisi, tortor, vel, mauris
-							dictum sit donec feugiat ac. Tellus mattis dui consequat,
-							vulputate lectus purus sapien, viverra. Elit neque pellentesque a
-							lorem gravida. Scelerisque risus pulvinar facilisi pellentesque.”
+			<DivWithBG p={16} opacity={75} bg='book-table.png'>
+				<div className='flex flex-col items-center justify-center gap-8'>
+					<Image
+						src='/images/quote.svg'
+						alt='Book a table'
+						width={62}
+						height={45}
+					/>
+					<p className='font-dancing text-3xl w-2/4 text-center'>
+						“Amet adipiscing vel nunc blandit. Nisi, tortor, vel, mauris dictum
+						sit donec feugiat ac. Tellus mattis dui consequat, vulputate lectus
+						purus sapien, viverra. Elit neque pellentesque a lorem gravida.
+						Scelerisque risus pulvinar facilisi pellentesque.”
+					</p>
+					<div className='mt-12 text-center'>
+						<h3 className='text-2xl'>Co-Founder of GOOD FOOD</h3>
+						<p
+							className='font-rock text-xl text-orange-400 mt-2'
+							style={{ transform: 'rotate(-4deg)' }}>
+							Jenth H. Terne
 						</p>
-						<div className='mt-12 text-center'>
-							<h3 className='text-2xl'>Co-Founder of GOOD FOOD</h3>
-							<p
-								className='font-rock text-xl text-orange-400 mt-2'
-								style={{ transform: 'rotate(-4deg)' }}>
-								Jenth H. Terne
-							</p>
-							<Image
-								src='/images/scratch.svg'
-								alt='Menu'
-								width={200}
-								height={20}
-							/>
-						</div>
+						<Image
+							src='/images/scratch.svg'
+							alt='Menu'
+							width={200}
+							height={20}
+						/>
 					</div>
 				</div>
-			</div>
+			</DivWithBG>
 			<div className='container grid grid-cols-5'>
 				<BookCount text='Daily Clients' number={150} />
 				<BookCount text='Memorable Events' number={200} />
