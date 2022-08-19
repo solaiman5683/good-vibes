@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import About from '../components/About/About';
+import Blogs from '../components/HomePage/Blogs';
 import BookTable from '../components/HomePage/BookTable';
 import Hero from '../components/HomePage/Hero';
 import Reviews from '../components/HomePage/Reviews';
@@ -19,12 +20,7 @@ export default function Home() {
 			<Head>
 				<title>Home | Good Vibes</title>
 			</Head>
-			<div className='hidden lg:block'>
-				<Navigation />
-			</div>
-			<div className='block lg:hidden'>
-				<MobileNavigation />
-			</div>
+			
 			<Hero />
 			<About />
 			<VideoSection />
@@ -38,6 +34,7 @@ export default function Home() {
 				<Image src='/images/r-line.svg' width={900} height={10} alt='' />
 			</div>
 			<Reviews />
+			<Blogs />
 		</>
 	);
 }

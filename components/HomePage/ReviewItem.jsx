@@ -4,7 +4,7 @@ import React from 'react';
 const ReviewItem = () => {
 	return (
 		<div className='border border-orange-300 p-6 relative'>
-			<div className='py-6'>
+			<div className='pt-6'>
 				<div className='flex gap-4'>
 					<div className='rounded-full'>
 						<Image
@@ -20,17 +20,15 @@ const ReviewItem = () => {
 					</div>
 				</div>
 
-				<p className='font-dancing text-xl'>
+				<p className='font-dancing text-xl py-2'>
 					“Amet adipiscing vel nunc blandit. Nisi, tortor, vel, mauris dictum
 					sit donec feugiat ac. Tellus mattis dui consequat, vulputate lectus
-					purus sapien, viverra. Elit neque pellentesque a lorem gravida.
-					Scelerisque risus pulvinar facilisi pellentesque. In quam etiam amet
-					molestie pretium. Dolor, pellentesque nunc ac augue egestas.
+					purus sapien, viverra. Elit neque pellentesque ac augue egestas.
 					Pellentesque cras fringilla enim.....”
 				</p>
 			</div>
 
-			<div className='absolute bg-black p-3 rounded-full -top-10'>
+			<div className='absolute bg-white dark:bg-black p-3 rounded-full -top-10'>
 				<Image
 					src='/images/quote-fill.svg'
 					alt='Avatar'

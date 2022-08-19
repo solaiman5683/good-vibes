@@ -55,3 +55,26 @@ a {
 .slick-dots li.slick-active button::before {
 	@apply dark:text-white;
 }
+
+.bg-white-gradient {
+	background: rgb(2, 0, 36);
+	background: -moz-linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 0) 0%,
+		rgba(255, 255, 255, 0.8869748583026961) 70%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 0) 0%,
+		rgba(255, 255, 255, 0.8869748583026961) 70%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 0) 0%,
+		rgba(255, 255, 255, 0.8869748583026961) 70%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ffffff",GradientType=1);
+}
