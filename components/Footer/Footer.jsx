@@ -188,7 +188,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className='text-center text-orange-400 opacity-75 p-4 bg-rose-100 dark:bg-gray-900'>
-				Copyright @ Fariha_Tasnim_Shifa 2022 - All Rights Reserved
+				Copyright @ Sulaiman Hosain 2022 - All Rights Reserved
 			</div>
 		</>
 	);
